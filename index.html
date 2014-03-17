@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Live Liquid</title>
+		<meta name="description" content="Live Liquid Rendering">
+		<meta name="viewport" content="width=device-width">
+
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/vendor/codemirror-3.22.css">
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+		<![endif]-->
+
+		<header>
+			<h1>Live Liquid</h1>
+			<div>
+				<em><a href="https://github.com/Shopify/liquid">Liquid</a> templates evaluated in real time.</em>
+				Powered by <a href="https://github.com/tonyheupel/liquid.js">liquid.js</a>, <a href="http://codemirror.net/">Code Mirror</a>, and <a href="https://github.com/nodeca/js-yaml">js-yaml</a>; cobbled together by <a href="https://github.com/nquinlan">Nick Quinlan</a>
+			</div>
+		</header>
+
+		<div class="column" id="setup-column">
+			<h2>Context</h2>
+			<textarea name="context" id="context">
+things:
+  - World
+  - Loons
+  - Dinosaurs
+  - Coffee</textarea>
+
+			<h2>Markup</h2>
+			<textarea name="markup" id="markup">
+{% for thing in things %}
+Hello {{ thing }}! <br>
+{% endfor %}</textarea>
+		</div>
+		<div class="column" id="rendered-column">
+			<h2>Rendered Content</h2>
+			<div id="rendered"></div>
+		</div>
+
+		<a href="https://github.com/nquinlan/live-liquid"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+		
+		<script src="js/vendor/codemirror-3.22.js"></script>
+		<script src="js/vendor/codemirror-3.22.xml.js"></script>
+		<script src="js/vendor/codemirror-3.22.yaml.js"></script>
+		<script src="js/vendor/codemirror-3.22.overlay.js"></script>
+		<script src="js/vendor/codemirror.liquid-1356686.js"></script>
+
+		<script src="js/vendor/liquid-1.2.1.min.js"></script>
+
+		<script src="js/vendor/js-yaml.js"></script>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>
