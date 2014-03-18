@@ -13,4 +13,4 @@ To make this, I simply compiled a bunch of other people's work into a webpage. T
 - [js-yaml](https://github.com/nodeca/js-yaml) by [nodeca](https://github.com/nodeca)
 
 
-_Shoutout to [Jade Dominguez](https://github.com/plusjade) for his excellent [explanation of Liquid](http://jekyllbootstrap.com/lessons/jekyll-introduction.html#toc_16)_
+_Shoutout to [Jade Dominguez](https://github.com/plusjade) for his excellent [explanation of Liquid](http://jekyllbootstrap.com/lessons/jekyll-introduction.html#toc_16)._
